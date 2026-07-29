@@ -1,0 +1,11 @@
+<h3>Baker List</h3>
+<table border="1" class="table">
+	<tr>
+		<th>Name</th>
+	</tr>
+	@for (artist of artistService.artists(); track artist.id) {
+	<tr>
+		<td>{{artist.name}}</td>
+	</tr>
+	}
+</table>

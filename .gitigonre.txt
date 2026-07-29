@@ -1,0 +1,29 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Java / Maven
+target/
+*.class
+
+# Spring Boot / Logs
+*.log
+
+# Angular / Node
+node_modules/
+dist/
+.angular/
+.cache/
+
+# Build Outputs
+build/
+
+# Environment Files
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db

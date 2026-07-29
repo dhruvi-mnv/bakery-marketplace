@@ -1,0 +1,369 @@
+:root {
+    --paper: #f7eedc;
+    --paper-light: #fffaf0;
+    --paper-dark: #e9dcc4;
+    --brown: #6f5944;
+    --brown-dark: #4d3b2c;
+    --brown-light: #967c62;
+    --sage: #8d9877;
+    --sage-dark: #6f7c5c;
+    --rose: #b98278;
+    --gold: #b59662;
+    --text: #45382d;
+    --text-muted: #796b5d;
+    --white: #fffdf8;
+    --border: rgba(111, 89, 68, 0.28);
+    --shadow: 0 12px 35px rgba(70, 52, 37, 0.18);
+    --shadow-soft: 0 6px 20px rgba(70, 52, 37, 0.12);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    color: var(--text);
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: var(--paper);
+    background-image: url("/images/bakery-bg.avif");
+    background-position: center center;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--brown-dark);
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+h3 {
+    margin-bottom: 35px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+a {
+    color: var(--brown);
+    transition: all 0.25s ease;
+}
+
+a:hover {
+    color: var(--sage-dark);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 18px 30px;
+    background: rgba(247, 238, 220, 0.96);
+    border-bottom: 2px solid var(--brown-light);
+    box-shadow: 0 5px 18px rgba(70, 52, 37, 0.15);
+}
+
+.brand {
+    color: var(--brown-dark);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.nav-links a {
+    padding: 8px 16px;
+    color: var(--brown);
+    border-radius: 5px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.nav-links a:hover {
+    color: var(--white);
+    background-color: var(--brown);
+}
+
+#bakeryPanel {
+    max-width: 1150px;
+    margin: 55px auto;
+    padding: 50px;
+    background:
+        linear-gradient(
+            rgba(255, 250, 240, 0.93),
+            rgba(255, 250, 240, 0.93)
+        );
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    box-shadow: var(--shadow);
+}
+
+#bakeryPanel h3 {
+    position: relative;
+    padding-bottom: 18px;
+}
+
+#bakeryPanel h3::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    margin: 15px auto 0;
+    background-color: var(--gold);
+}
+
+.submit-form {
+    max-width: 600px;
+    margin: 0 auto 45px;
+    padding: 35px;
+    background: rgba(255, 253, 248, 0.96);
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--brown-light);
+    border-radius: 5px;
+    box-shadow: var(--shadow-soft);
+}
+
+.form-label {
+    margin-bottom: 7px;
+    color: var(--brown-dark);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.form-control,
+.form-select {
+    min-height: 46px;
+    padding: 10px 14px;
+    color: var(--text);
+    background-color: var(--paper-light);
+    border: 1px solid rgba(111, 89, 68, 0.35);
+    border-radius: 4px;
+    transition: all 0.25s ease;
+}
+
+.form-control:hover,
+.form-select:hover {
+    border-color: var(--brown-light);
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: var(--white);
+    border-color: var(--sage-dark);
+    box-shadow: 0 0 0 3px rgba(111, 124, 92, 0.15);
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: #a39789;
+}
+
+.btn {
+  min-height: 44px !important;
+  padding: 10px 28px !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px !important;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+/* Purchase Button - Warm Caramel Brown */
+.btn-success,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active {
+  display: block !important;
+  width: fit-content !important;
+  margin: 20px auto 0 !important;
+
+  color: var(--white) !important;
+  background-color: var(--brown-light) !important;
+  border: 1px solid var(--brown-light) !important;
+  border-color: var(--brown-light) !important;
+
+  border-radius: 6px !important;
+  box-shadow: 0 3px 8px rgba(70, 52, 37, 0.12) !important;
+}
+
+.btn-success:hover,
+.btn-success:focus:hover {
+  color: var(--white) !important;
+  background-color: var(--brown) !important;
+  border-color: var(--brown) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(70, 52, 37, 0.18) !important;
+}
+
+
+/* Delete Button - Soft Dusty Rose */
+.btn-danger,
+.btn-danger:focus,
+.btn-danger:active,
+.btn-danger.active {
+  display: block !important;
+  width: fit-content !important;
+  margin: 20px auto 0 !important;
+
+  color: var(--white) !important;
+  background-color: var(--rose) !important;
+  border: 1px solid var(--rose) !important;
+  border-color: var(--rose) !important;
+
+  border-radius: 6px !important;
+  box-shadow: 0 3px 8px rgba(70, 52, 37, 0.12) !important;
+}
+
+.btn-danger:hover,
+.btn-danger:focus:hover {
+  color: var(--white) !important;
+  background-color: #a66f67 !important;
+  border-color: #a66f67 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(70, 52, 37, 0.18) !important;
+}
+
+table {
+    width: 100%;
+    margin-top: 30px;
+    overflow: hidden;
+    background-color: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: var(--shadow-soft);
+}
+
+th {
+    padding: 15px 14px;
+    color: var(--white);
+    background-color: var(--brown);
+    border: none;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-align: center !important;
+    vertical-align: middle;
+}
+
+td {
+    padding: 14px;
+    color: var(--text);
+    border-bottom: 1px solid rgba(111, 89, 68, 0.15);
+    text-align: center;
+    vertical-align: middle;
+}
+
+tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: #fbf5e9;
+}
+
+tbody tr:hover td {
+    background-color: #eee2ce;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.alert {
+    color: var(--brown-dark);
+    background-color: rgba(245, 232, 207, 0.95);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    box-shadow: var(--shadow-soft);
+}
+
+@media (max-width: 900px) {
+    nav::before {
+        width: 100%;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    #bakeryPanel {
+        margin: 40px 25px;
+        padding: 35px 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        position: relative;
+        gap: 5px;
+        padding: 15px;
+    }
+
+    nav a {
+        padding: 7px 11px;
+        font-size: 0.85rem;
+    }
+
+    #bakeryPanel {
+        margin: 25px 15px;
+        padding: 25px 18px;
+    }
+
+    .submit-form {
+        padding: 25px 20px;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        padding: 6px 9px;
+    }
+
+    #bakeryPanel {
+        margin: 15px 10px;
+        padding: 20px 15px;
+    }
+
+    .submit-form {
+        padding: 20px 16px;
+    }
+}

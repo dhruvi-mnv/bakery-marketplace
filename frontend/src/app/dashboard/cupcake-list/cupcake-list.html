@@ -1,0 +1,30 @@
+<h3>Cupcakes List</h3>
+<table border="1" class="table">
+	<tr>
+		<th>Name</th>
+		<th>Price</th>
+		<th>Quantity</th>
+		<th>Artist Name</th>
+		<th>Delete</th>
+		<th>Purchase</th>
+	</tr>
+	@for (cupcake of cupcakeService.cupcake(); track cupcake.id) {
+	<tr>
+		<td>{{cupcake.name}}</td>
+		<td>{{cupcake.price}}</td>
+		<td>{{cupcake.qnty}}</td>
+		<td>{{cupcake.empName}}</td>
+		<td>
+			<button class="btn btn-danger" type="button" (click)="deleteCupcake(cupcake.id)">Delete</button>
+		</td>
+		<td>
+			@if (cupcake.qnty! > 0) {
+				<button class="btn btn-success" type="button" (click)="purchaseCupcake(cupcake)">Purchase</button>
+			}
+			@else {
+				<span style="color:red; font-weight:bold;">SOLD OUT!</span>
+			}
+		</td>
+	</tr>
+	}
+</table>

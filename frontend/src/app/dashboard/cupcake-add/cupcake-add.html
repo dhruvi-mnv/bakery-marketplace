@@ -1,0 +1,18 @@
+<h3>Add Cupcake</h3>
+<div class="submit-form">
+	<div class="form-group">
+		Name: <input class="form-control" id="name" type="text" 
+		name="name" [(ngModel)]="cupcake.name"> <br>
+		Price: <input class="form-control" id="price" type="number"
+		 name="price" [(ngModel)]="cupcake.price"> <br>
+		Quantity: <input class="form-control" id="qnty" type="number"
+		 name="qnty" [(ngModel)]="cupcake.qnty"> <br>
+		Artist Name: <select class="form-control" id="empName" name="empName" [(ngModel)]="cupcake.empName">
+		  <option value="">Select Artist</option>
+		  <option *ngFor="let artist of artistService.artists()" [value]="artist.name">
+		    {{ artist.name }}
+		  </option>
+		</select>		
+		<button class="btn btn-success" (click)="saveCupcake()">Submit</button>
+	</div>
+</div>
