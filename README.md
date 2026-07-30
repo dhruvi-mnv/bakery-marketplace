@@ -690,25 +690,6 @@ The general development process is:
 
 ![Bakery Marketplace Development Workflow](images/workflow.png)
 
-```text
-Develop Service
-      |
-      v
-Run Service Locally
-      |
-      v
-Test REST Endpoints
-      |
-      v
-Verify API Gateway Routing
-      |
-      v
-Test Angular Integration
-      |
-      v
-Validate End-to-End Application Flow
-```
-
 This structure makes it easier to extend the application by adding new services, functionality, or frontend components without placing all application logic into a single codebase.
 
 ---
@@ -779,9 +760,9 @@ This project provided practical experience in:
 
 Software Development and Network Engineering Student
 
-GitHub: https://github.com/dhruvi-mnv/
+[GitHub]: (https://github.com/dhruvi-mnv/)
 
-LinkedIn: https://www.linkedin.com/in/dhruvi-jariwala-53b9a828/
+[LinkedIn]: https://www.linkedin.com/in/dhruvi-jariwala-53b9a828/
 
 ---
 
