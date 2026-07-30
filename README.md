@@ -758,11 +758,11 @@ This project provided practical experience in:
 
 **Dhruvi Jariwala**
 
-Software Development and Network Engineering Student
+GitHub:
+[GITHUB](https://github.com/dhruvi-mnv/)
 
-[GitHub]: (https://github.com/dhruvi-mnv/)
-
-[LinkedIn]: https://www.linkedin.com/in/dhruvi-jariwala-53b9a828/
+LinkedIn:
+[LINKEDIN](https://www.linkedin.com/in/dhruvi-jariwala-53b9a828b/)
 
 ---
 
